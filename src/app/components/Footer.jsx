@@ -14,15 +14,15 @@ export default function Footer() {
                     <Image src={logo} alt="Temonk Logo" width={200} height={50} />
                     <div className="flex items-start mb-2 text-sm mt-5">
                         <MapPinIcon className="w-5 h-5 mr-2 mt-1 text-[#209dd8]" />
-                        <p>123 Business Street, New Delhi, India</p>
+                        <p>G, 56/7, Laxmi Park Rd, Aman Puri, Block B, Lakshmi Park, Nangloi, Delhi, 110041</p>
                     </div>
                     <div className="flex items-center mb-2 text-sm py-3">
                         <PhoneIcon className="w-5 h-5 mr-2 text-[#209dd8]" />
-                        <p>+91 9876543210</p>
+                        <p>+91 82736 43002</p>
                     </div>
                     <div className="flex items-center text-sm">
                         <EnvelopeIcon className="w-5 h-5 mr-2 text-[#209dd8]" />
-                        <p>info@temonk.com</p>
+                        <p>contact@temonk.com</p>
                     </div>
                 </div>
 
@@ -42,11 +42,11 @@ export default function Footer() {
                 <div>
                     <h3 className="text-xl font-semibold mb-4">Services</h3>
                     <ul className="space-y-2 text-sm">
-                        <li>Permanent Staffing</li>
-                        <li className="py-2">Background Checks</li>
-                        <li>Payroll Processing</li>
-                        <li className="py-2">Facility Management</li>
-                        <li>Compliance Management</li>
+                        <li><Link href="/services">Permanent Staffing</Link></li>
+                        <li className="py-2"><Link href="/services">Background Checks</Link></li>
+                        <li><Link href="/services">Payroll Processing</Link></li>
+                        <li className="py-2"><Link href="/services">Facility Management</Link></li>
+                        <li><Link href="/services">Compliance Management</Link></li>
                     </ul>
                 </div>
 
@@ -54,11 +54,11 @@ export default function Footer() {
                 <div>
                     <h3 className="text-xl font-semibold mb-4">Industries</h3>
                     <ul className="space-y-2 text-sm">
-                        <li>Healthcare</li>
-                        <li className="py-2">IT</li>
-                        <li>FMCG</li>
-                        <li className="py-2">Training</li>
-                        <li>Logistics</li>
+                        <li><Link href="/industries">Healthcare</Link></li>
+                        <li className="py-2"><Link href="/industries">IT</Link></li>
+                        <li><Link href="/industries">FMCG</Link></li>
+                        <li className="py-2"><Link href="/industries">Training</Link></li>
+                        <li><Link href="/industries">Logistics</Link></li>
                     </ul>
                 </div>
             </div>
@@ -67,6 +67,6 @@ export default function Footer() {
             <div className="text-center py-4 text-sm text-gray-400 py-3">
                 © {new Date().getFullYear()} Temonk. All rights reserved.
             </div>
-        </footer>
+        </footer >
     );
 }

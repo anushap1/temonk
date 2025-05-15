@@ -6,7 +6,8 @@ import bg from "../../../public/image/bg-video.gif";
 
 const Banner = () => {
     return (
-        <section className="w-full py-16 px-6"
+        <section
+            className="w-full lg:min-h-screen py-16 px-4 sm:px-6"
             style={{
                 backgroundImage: `url(${bg.src})`,
                 backgroundSize: "cover",
@@ -14,19 +15,19 @@ const Banner = () => {
                 backgroundRepeat: "no-repeat",
             }}
         >
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 h-100">
+            <div className="max-w-7xl mx-auto mt-5 flex flex-col md:flex-row items-center gap-10">
                 {/* Left content */}
                 <div className="flex-1 text-center md:text-center">
-                    <h1 className="text-7xl md:text7xl font-bold mb-4 text-white">
-                        We help you hire right talent
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 text-white leading-tight">
+                        We help you hire the<br /> right talent
                     </h1>
-                    <p className="text-3xl mb-6 text-white">
-                        We find the perfect candidate for your company who can help you achieving all the business goals
+                    <p className="text-base sm:text-lg md:text-xl lg:text-3xl mb-4 mt-10 text-white">
+                        We find the perfect candidate for your company who<br /> can help you achieve all your business goals.
                     </p>
-                    <p className="text-3xl mb-6 text-white">
-                        We're serving for all industries:
+                    <p className="text-base sm:text-lg md:text-xl lg:text-3xl mb-4 text-white">
+                        We're serving all industries:
                     </p>
-                    <h3 className="text-3xl md:text-3xl font-bold mb-4 text-white">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
                         <TypeAnimation
                             sequence={[
                                 "FMCG",
@@ -45,18 +46,16 @@ const Banner = () => {
                             repeat={Infinity}
                         />
                     </h3>
-                    {/* <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md">
-                        Get Started
-                    </button> */}
                 </div>
 
-                {/* Right Image */}
+                {/* Right Image (optional) */}
                 {/* <div className="flex-1">
                     <Image
-                        src={Right} // ✅ place your gif in public/your-animation.gif
+                        src={Right}
                         alt="Animated Demo"
                         width={500}
                         height={400}
+                        className="mx-auto"
                     />
                 </div> */}
             </div>
